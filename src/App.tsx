@@ -10,7 +10,8 @@ function App() {
   useEffect(() => {
     getBooksBySearch("Blueberry").then((res) => setBooks(res));
   });
-
+  // Conditionally render the UserProfile component or the LoginSignup
+  // Depending on if they are logged in
   return (
     <div className="App">
       {books.map((book) => {

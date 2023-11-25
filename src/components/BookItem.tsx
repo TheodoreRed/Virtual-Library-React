@@ -5,6 +5,8 @@ interface Props {
   book: GoogleBook;
 }
 
+// Define what a book will display as
+// This is where BookDetails, Add, and Remove button will be
 const BookItem = ({ book }: Props) => {
   return (
     <div className="BookItem">
