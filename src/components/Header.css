@@ -1,0 +1,46 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4e9e2;
+  color: #5a3e36;
+  border-bottom: 2px solid #c5a491;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.Header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.Header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.Header a {
+  color: #5a3e36;
+  transition: color 0.3s ease;
+}
+
+.Header a:hover {
+  color: #3e2723;
+}
+
+/* Dark theme styles */
+.dark-theme .Header {
+  background-color: #423629;
+  color: #e1d7c3;
+  border-bottom: 2px solid #7a6f64;
+}
+
+.dark-theme .Header a {
+  color: #e1d7c3;
+}
+
+.dark-theme .Header a:hover {
+  color: #f4e9e2;
+}

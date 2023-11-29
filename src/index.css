@@ -1,0 +1,32 @@
+/* Resets */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Default/Light theme styles */
+body {
+  font-family: sans-serif;
+  background-color: white;
+  color: black;
+}
+
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Dark theme styles */
+body.dark-theme a {
+  color: white;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}

@@ -5,5 +5,6 @@ export default interface User {
   displayName?: string;
   photoURL?: string;
   registeredAt?: Date;
+  darkTheme: boolean;
   library: GoogleBook[];
 }

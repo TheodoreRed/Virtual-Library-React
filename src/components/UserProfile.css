@@ -1,0 +1,59 @@
+.UserProfile {
+  font-family: "Times New Roman", serif;
+  color: #5a3e36; /* Dark brown text color, similar to the header */
+}
+
+.UserProfile h2 {
+  text-align: center;
+  margin: 20px auto; /* Centered with auto margins */
+  padding: 10px;
+  background-color: #e7dfd5; /* A slightly lighter color than the header for distinction */
+  width: fit-content; /* Width based on content */
+  border-radius: 8px; /* Rounded corners for a distinct look */
+}
+
+.UserProfile .addBookBtnContainer {
+  position: fixed; /* Fixed positioning */
+  bottom: 0; /* At the bottom of the screen */
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #f4e9e2; /* Light background */
+  text-align: center; /* Centering the button */
+  padding: 10px 0; /* Padding at the top and bottom */
+}
+
+.UserProfile .addBookBtnContainer button {
+  background-color: #c5a491; /* Light brown button color */
+  color: #5a3e36; /* Dark brown text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.UserProfile .addBookBtnContainer button:hover {
+  background-color: #a48870; /* Slightly darker shade for hover effect */
+}
+
+.dark-theme .UserProfile {
+  color: #e1d7c3; /* Light, parchment-like text color */
+}
+
+.dark-theme .UserProfile h2 {
+  background-color: #5a3e36; /* Darker color for distinction */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.dark-theme .UserProfile .addBookBtnContainer {
+  background-color: #423629; /* Dark background */
+}
+
+.dark-theme .UserProfile .addBookBtnContainer button {
+  background-color: #7a6f64; /* Darker button color */
+  color: #e1d7c3; /* Light, parchment-like text color */
+}
+
+.dark-theme .UserProfile .addBookBtnContainer button:hover {
+  background-color: #5a3e36; /* Lighter shade for hover effect */
+}

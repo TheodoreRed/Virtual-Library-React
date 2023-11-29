@@ -1,23 +1,27 @@
-import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { getBooksBySearch } from "./services/googleBookApi";
-import GoogleBook from "./models/GoogleBook";
-import BookItem from "./components/BookItem";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import UserProfile from "./components/UserProfile";
+import { useContext } from "react";
+import UserContext from "./context/UserContext";
 
 function App() {
-  /* const [books, setBooks] = useState<GoogleBook[]>([]); */
+  const { user } = useContext(UserContext);
 
-  /* useEffect(() => {
-    getBooksBySearch("Blueberry").then((res) => setBooks(res));
-  }); */
-  // Conditionally render the UserProfile component or the LoginSignup
-  // Depending on if they are logged in
+  if (user?.darkTheme) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
   return (
-    <div className="App">
-      {/* {books.map((book) => {
-        return <BookItem book={book} />;
-      })} */}
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/:userId" element={<UserProfile />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

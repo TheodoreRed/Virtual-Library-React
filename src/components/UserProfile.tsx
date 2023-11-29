@@ -1,16 +1,15 @@
-import User from "../models/User";
+import { useContext } from "react";
 import "./UserProfile.css";
+import UserContext from "../context/UserContext";
 
-interface Props {
-  user: User;
-}
-
-// The UserLibrary will be here
-const UserProfile = ({ user }: Props) => {
+const UserProfile = () => {
+  const { user } = useContext(UserContext);
   return (
     <div className="UserProfile">
-      <h2>Welcome, {user.displayName ? user.displayName : "user"}!</h2>
-      <p>Library</p>
+      <h2>Library</h2>
+      <div className="addBookBtnContainer">
+        <button>Add Book</button>
+      </div>
     </div>
   );
 };
