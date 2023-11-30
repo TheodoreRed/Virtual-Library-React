@@ -1,0 +1,65 @@
+.BookItem {
+  display: flex;
+  align-items: flex-start;
+  background: #f8f0e3;
+  border: 1px solid #dcd0c0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(33% - 10px);
+  font-family: "Georgia", serif;
+}
+
+.BookCover img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.BookCover img:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.BookDetailsContainer p {
+  margin: 17px 0;
+}
+
+/* Dark Theme Styles */
+.dark-theme .BookItem {
+  background: #2c2c2c;
+  border: 1px solid #444;
+  color: #ddd;
+}
+
+.dark-theme .BookCover img {
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .BookCover img:hover {
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.dark-theme .BookDetailsContainer h3,
+.dark-theme .BookDetailsContainer p {
+  color: #ddd;
+}
+
+@media only screen and (min-width: 768px) {
+  .BookItem {
+    max-width: 300px;
+  }
+  .BookCover img {
+    width: 150px;
+  }
+  .BookDetailsContainer h3,
+  .BookDetailsContainer p {
+    font-size: 1.5rem;
+  }
+}

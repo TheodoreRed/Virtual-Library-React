@@ -1,0 +1,14 @@
+.UserLibrary {
+  padding: 10px;
+  border-radius: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dark-theme .UserLibrary {
+  background: url("/path/to/dark-wood-texture.jpg");
+  color: #f0f0f0;
+}

@@ -11,14 +11,33 @@ ul {
 
 /* Default/Light theme styles */
 body {
-  font-family: sans-serif;
-  background-color: white;
+  font-family: "Georgia", serif;
+  background-color: #f8f8f8;
   color: black;
 }
 
 body a {
   text-decoration: none;
-  color: black;
+  color: #5a3e36;
+  transition: color 0.3s ease;
+}
+
+body a:hover {
+  color: #3e2723;
+}
+
+button {
+  background-color: #c5a491;
+  color: #5a3e36;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a48870;
 }
 
 /* Dark theme styles */
@@ -29,4 +48,13 @@ body.dark-theme a {
 body.dark-theme {
   background-color: black;
   color: white;
+}
+
+.dark-theme button {
+  background-color: #7a6f64;
+  color: #e1d7c3;
+}
+
+.dark-theme button:hover {
+  background-color: #5a3e36;
 }

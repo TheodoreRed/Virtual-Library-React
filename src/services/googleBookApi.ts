@@ -9,7 +9,7 @@ export const getBooksBySearch = (search: string): Promise<GoogleBook[]> => {
     .then((res) => res.data.items);
 };
 
-export const getBooksById = (bookId: string): Promise<GoogleBook> => {
+export const getBookById = (bookId: string): Promise<GoogleBook> => {
   return axios
     .get(`${baseUrl}volumes/${encodeURIComponent(bookId)}`)
     .then((res) => res.data);

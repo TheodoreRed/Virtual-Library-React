@@ -57,7 +57,14 @@ const defaultUser: User = {
   photoURL: "default-photo-url.jpg",
   registeredAt: new Date(),
   darkTheme: false,
-  library: [robinsonCrusoe],
+  library: [
+    robinsonCrusoe,
+    robinsonCrusoe,
+    robinsonCrusoe,
+    robinsonCrusoe,
+    robinsonCrusoe,
+    robinsonCrusoe,
+  ],
 };
 
 const UserContextProvider = ({ children }: Props) => {

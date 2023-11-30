@@ -1,0 +1,46 @@
+.BookDetails {
+  padding: 20px 20px 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  font-family: "Georgia", serif;
+  position: relative;
+}
+
+.BookDetails .topSection {
+  display: grid;
+  /* Image then content */
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.BookDetails .thumbnailContainer {
+  max-width: 200px;
+}
+
+.BookDetails .thumbnailContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.BookDetails .bookInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.BookDetails .bookDescription {
+  margin-top: 20px;
+}
+
+.BookDetails .backBtnContainer button {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 0px 8px 0px 8px;
+  border: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}

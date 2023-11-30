@@ -1,14 +1,18 @@
-import { useContext } from "react";
+import { Link } from "react-router-dom";
+import UserLibrary from "./UserLibrary";
 import "./UserProfile.css";
+import { useContext } from "react";
 import UserContext from "../context/UserContext";
 
 const UserProfile = () => {
   const { user } = useContext(UserContext);
   return (
     <div className="UserProfile">
-      <h2>Library</h2>
+      <UserLibrary />
       <div className="addBookBtnContainer">
-        <button>Add Book</button>
+        <Link to={`/${user?.displayName}/library/add`}>
+          <button>Add Book</button>
+        </Link>
       </div>
     </div>
   );

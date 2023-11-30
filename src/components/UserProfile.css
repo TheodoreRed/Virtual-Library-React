@@ -50,10 +50,10 @@
 }
 
 .dark-theme .UserProfile .addBookBtnContainer button {
-  background-color: #7a6f64; /* Darker button color */
-  color: #e1d7c3; /* Light, parchment-like text color */
+  background-color: #7a6f64;
+  color: #e1d7c3;
 }
 
 .dark-theme .UserProfile .addBookBtnContainer button:hover {
-  background-color: #5a3e36; /* Lighter shade for hover effect */
+  background-color: #5a3e36;
 }

@@ -13,7 +13,9 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to={`/${user?.uid}`}>Welcome, {user?.displayName}</Link>
+            <Link to={`${user?.displayName}/library`}>
+              Welcome, {user?.displayName}
+            </Link>
           </li>
         </ul>
       </nav>

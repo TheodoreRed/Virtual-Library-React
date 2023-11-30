@@ -1,0 +1,22 @@
+.AddToLibrary {
+  font-family: "Times New Roman", serif;
+  color: #5a3e36; /* Dark brown text color, similar to the header */
+}
+
+.AddToLibrary h2 {
+  text-align: center;
+  margin: 20px auto; /* Centered with auto margins */
+  padding: 10px;
+  background-color: #e7dfd5; /* A slightly lighter color than the header for distinction */
+  width: fit-content; /* Width based on content */
+  border-radius: 8px; /* Rounded corners for a distinct look */
+}
+
+.dark-theme .AddToLibrary {
+  color: #e1d7c3; /* Light, parchment-like text color */
+}
+
+.dark-theme .AddToLibrary h2 {
+  background-color: #5a3e36; /* Darker color for distinction */
+  border-radius: 8px; /* Rounded corners */
+}
